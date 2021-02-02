@@ -60,16 +60,15 @@ public class MyHashMap<K,V> {
 
 		MyHashMap<Stock, Integer> prices = new MyHashMap<>();
 		Stock msft = new Stock("MSFT", "Microsoft");
-		Stock ibm = new Stock("IBM", "IBM Stock");
+		Stock ibm = new Stock("IBM", "IBM");
 		prices.put(msft, 200);
-		prices.put(ibm, 55);
-		System.out.println("price of msft is: " + prices.get(msft));
-		System.out.println("price of ibm is :" + prices.get(ibm));
-		System.out.println("price of msft is :" + prices.get(new Stock("MSFT", "Microsoft")));
+		prices.put(ibm, 50);
+		System.out.println("Price of MSFT is " + prices.get(msft));
+		System.out.println("Price os IBM is " + prices.get(ibm));
+		System.out.println("Price of MSFT is " + prices.get(new Stock("MSFT", "Micro")));
+		System.out.println("Price of GOOG is" + prices.get(new Stock("GOOG", "Google")));
 
 
-
-				
 
 	}
 
